@@ -1,9 +1,6 @@
-import { PageRouteProps } from "@/interfaces"; // <-- updated import
+import { PageRouteProps } from "@/interface"; // <-- updated import
 import Button from "@/components/common/Button";
 import { useRouter } from "next/router";
-
-
-
 
 export default function Home() {
   const router = useRouter();
@@ -27,17 +24,17 @@ export default function Home() {
       {/* Navigation Options */}
       <div className="flex gap-6">
         <Button
-          action={() => routeToNextPage({ pageRoute: '/generate-text-ai' })}
+          action={() => routeToNextPage({ pageRoute: "/generate-text-ai" })}
           buttonLabel="Generate Text"
           buttonBackgroundColor="blue"
         />
         <Button
-          action={() => routeToNextPage({ pageRoute: '/text-to-image' })}
+          action={() => routeToNextPage({ pageRoute: "/text-to-image" })}
           buttonLabel="Text to Image"
           buttonBackgroundColor="green"
         />
         <Button
-          action={() => routeToNextPage({ pageRoute: '/counter-app' })}
+          action={() => routeToNextPage({ pageRoute: "/counter-app" })}
           buttonLabel="Contact us"
           buttonBackgroundColor="orange"
         />
